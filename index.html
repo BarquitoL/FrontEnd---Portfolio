@@ -3,38 +3,144 @@
     <head>
         <title>Portfolio Web</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="styles-css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://kit.fontawesome.com/234a709387.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <ul>
-                <li>"Argentina Programa" #YoProgramo</li>
-                <li>Instagram</li>
-                <li>Facebook</li>
-                <li>Linkedin</li>
-            </ul>
-            <button>Login de edición</button>
+        <header class="header-principal">
+            <div class="header-logo">
+                <p>Argentina Programa 4.0</p>
+            </div>
+            <div class="header-navigation">
+                <a href="" target="_self">Inicio</a>
+                <a href="" target="_self">Sobre mí</a>
+                <a href="" target="_self">Educación</a>
+                <a href="" target="_self">Proyectos</a>
+                <a href="" target="_self"></a>
+            </div>
+            <div class="header-button">
+                <button>Login</button>
+            </div>
         </header>
-        <nav>
 
-        </nav>
-        <section>
-            <img alt="banner representativo">
-            <img alt="foto de perfil">
-            <h2>Nombre y título</h2>
-            <p>Información profesional resumida</p>
-            <h2>Experiencia</h2>
-            <p>Lugares donde he trabajado (incluyendo título, periodo, logo de la empresa, y descripción de las tareas realizadas</p>
+        <section class="inicio">
+            <h1>Desarrollador Full Stack Web</h1>
+            <figure>
+                <img src="Imágenes/Perfil.jpeg">
+            </figure>
+        </section>
+
+        <section class="sobremi">
+            <h2>¡Hola! Mi nombre es Marco. Un gusto en conocerte.</h2>
+            <p>Soy un programador full stack web junior, y estoy estudiando para algún día convertirme en un desarrollador senior. Soy una persona simple y práctica, me gustan los retos y siempre estoy dispuesto a nuevos desafíos.</p>
+            <p class="sobremi-footer">Te dejo mi <a href="curriculum/curriculum.pdf" class="cv-cv">cv</a> por si quieres descargarlo.</p>
+        </section>
+        
+        <section class="educacion">
             <h2>Educación</h2>
-            <p>Formación académica y cursos (detallar información de instituto, logo, nombre, de ser posible).</p>
-            <h2>Hard and soft skills</h2>
-            <p>Mostrar el nivel de habilidad en forma de gráficos. Recordar que las habilidades duras son las relacionadas a la programación y ese tipo de cosas y las habilidades blandas son relacionadas a lo personal.</p>
-            <h2>Proyectos</h2>
-            <p>Proyectos en los que he trabajado. Cada proyecto deberá contener el nombre, fecha de realización, descripción del proyecto y el link a su evidencia, en este caso podrías adjuntar imágenes de ellos.</p>
-            <h2>Información adicional (no incluir de esta forma en el portfolio).</h2>
-            <h2>Login</h2>
-            <p>La plataforma debe contar con login con usuario y contraseña para permitir la edición del portfolio</p>
-            <h2>Botones de edición y botones para eliminar contenido</h2>
+            <h3>Argentina Programa. #YoProgramo</h3>
+            <p>Es un curso completo para desarrollador web full stack junior donde vi lenguajes como HTML, CSS, JavaScript, Angular y React.</p>
+            <h3>Udemy. JavaScript course</h3>
+            <p>Es un máster sobre JavaScript.</p>
+            <h3>Google Grasshopper</h3>
+            <p>Principios básicos sobre programación.</p>
+            <h2>___</h2>
+        </section>
+
+        <section class="habilidades">
+            <h2>Habilidades duras y blandas</h2>
+            <h3>FrontEnd</h2>
+            <div class="html-bar">
+                <div class="habilidades-logo">
+                    <img src="Imágenes/html.png">
+                </div>
+                <div class="habilidades-barra">
+                    <div class="habilidades-relleno html-bbr" style="--w:90%">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="html-bar">
+                <div class="habilidades-logo">
+                    <img src="Imágenes/css.png">
+                </div>
+                <div class="habilidades-barra">
+                    <div class="habilidades-relleno css-bbr" style="--w:50%">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="html-bar">
+                <div class="habilidades-logo">
+                    <img src="Imágenes/javascript.png">
+                </div>
+                <div class="habilidades-barra">
+                    <div class="habilidades-relleno javascript-bbr" style="--w:30%">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="html-bar">
+                <div class="habilidades-logo">
+                    <img src="Imágenes/angular.png">
+                </div>
+                <div class="habilidades-barra">
+                    <div class="habilidades-relleno angular-bbr" style="--w:20%">
+
+                    </div>
+                </div>
+            </div>
+
+            <h3>BackEnd</h2>
+
+            <div class="html-bar">
+                <div class="habilidades-logo">
+                    <img src="Imágenes/html.png">
+                </div>
+                <div class="habilidades-barra">
+                    <div class="habilidades-relleno" style="--w:40%">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="html-bar">
+                <div class="habilidades-logo">
+                    <img src="Imágenes/html.png">
+                </div>
+                <div class="habilidades-barra">
+                    <div class="habilidades-relleno" style="--w:40%">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="proyectos">
+            <div class="proyectos-titulo">
+                <h2>Proyectos</h2>
+            </div>
+            <div class="proyectos-container">
+                <div class="proyecto p-2">
+                    <h3>Portfolio web</h3>
+                    <img src="Imágenes/proyecto-1.png">
+                    <p>Proyecto final realizado para Argentina Programa</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <p>Muchas gracias por tomarte el tiempo de ver mi página.<br>Te dejo mis redes sociales.</p>
+            <div class="footer-redes">
+                <a href="https://www.instagram.com/marco_lauxmann" target="_blank"><i class="fa-brands fa-instagram"></i>
+                <a target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
         </section>
     </body>
 </html>

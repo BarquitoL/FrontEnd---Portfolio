@@ -1,10 +1,309 @@
+html {
+    margin: 0px;
+    padding: 0px;
+}
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", arial;
 }
 
-header {
-    background-color:beige;
-    color: red;
+/* ==================== HEADER ========================0 */
+
+.header-principal {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.header-logo {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.header-logo p {
+    margin: 0;
+    color: rgb(59, 56, 255);
+}
+
+.header-navigation {
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+    padding: 0px 10px;
+    justify-content: space-between;
+}
+
+.header-navigation a {
+    text-decoration: none;
+    margin: 0;
+    transition: all .3s;
+}
+
+.header-navigation a:hover {
+    cursor: pointer;
+    color: rgb(59, 56, 255);
+}
+
+.header-button {
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.header-button button {
+    color: rgb(59, 56, 255);
+    border-radius: 20px;
+    border: 2px solid rgb(59, 56, 255);
+    padding: 4px 6px;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    transition: all .3s;
+}
+
+.header-button button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(59, 56, 255);
+    cursor: pointer;
+}
+
+/* ====================== INICIO ========================= */
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inicio h1 {
+    font-size: 70px;
+    text-align: center;
+    padding: 10px 15px;
+    background: linear-gradient(45deg, rgb(59, 56, 255), rgb(255, 31, 32));
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.inicio figure {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    padding: 10px;
+    border: 2px solid rgb(255, 31, 32);
+    border-radius: 50%;
+}
+
+.inicio figure img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+}
+
+/* ======================= SOBRE MÍ ======================== */
+
+.sobremi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobremi h2 {
+    font-size: 30px;
+}
+
+.sobremi p {
+    width: 75%;
+    text-align: center;
+    font-size: 15px;
+}
+
+.sobremi .sobremi-footer {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.sobremi .cv-cv {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(45deg, rgb(59, 56, 255), rgb(255, 31, 32));
+}
+
+/* ==================EDUCACIÓN============================== */
+
+.educacion {
+    width: 100%;
+    background-color: rgb(59, 56, 255);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(90deg, rgb(224, 0, 1), rgb(255, 31, 32)); */
+}
+
+.educacion h2 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+.educacion h3 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.educacion p {
+    margin: 0;
+}
+
+/* ========================== HARD AND SOFT SKILLS ================================== */
+
+.habilidades {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.habilidades h2 {
+    font-size: 30px;
+    color:rgb(59, 56, 255);
+}
+
+.html-bar {
+    height: 45px;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+}
+
+.html-bar .habilidades-logo {
+    flex-grow: 1;
+    flex-basis: 10%;
+}
+
+.html-bar .habilidades-logo img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.html-bar .habilidades-barra {
+    flex-grow: 1;
+    flex-basis: 90%;
+    border-radius: 25px;
+    border: 2px solid rgb(230, 230, 230);
+}
+
+.html-bar .habilidades-relleno {
+    height: 100%;
+    width: var(--w);
+    border-radius: 25px;
+    background-color: rgb(59, 56, 255);
+}
+
+/* ===================== PROYECTOS ============================ */
+
+.proyectos-titulo {
+    width: 100%;
+    background-color: rgb(59, 56, 255);
+    color: rgb(255, 255, 255);
+    height: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.proyectos-titulo h2 {
+    font-size: 30px;
+}
+
+.proyectos-container{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.proyecto {
+    width: 200px;
+    border: 3px solid rgb(140, 140, 140);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+.proyecto h3 {
+    margin: 5px;
+}
+
+.proyecto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.proyecto p {
+    font-size: 14px;
+    color: rgb(150, 150, 150);
+    margin: 5px;
+}
+
+.proyecto:hover {
+    cursor: pointer;
+    border: 3px solid rgb(255, 31, 32);
+    box-shadow: 10px 10px 20px rgba(200, 0, 0, 0.3);
+}
+
+/* ========================== FOOTER ============================== */
+
+.footer {
+    width: 85%;
+    background-color: rgb(255, 31, 32);
+    color:rgb(255, 255, 255);
+    margin: 15px auto 0px auto;
+    padding: 15px;
+    text-align: center;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 22px;
+}
+
+.footer .footer-redes {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .footer-redes i {
+    text-decoration: none;
+    font-size: 80px;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.footer .footer-redes i:hover {
+    color:rgb(0, 0, 0);
+    cursor: pointer;
 }
